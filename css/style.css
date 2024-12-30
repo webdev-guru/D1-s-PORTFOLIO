@@ -606,7 +606,7 @@ section {
   text-transform: none;
   margin: .7rem 0;
   background: transparent; /* Transparent background */
-  border: none;
+  border: 2px solid #fff; /* White border added */
   box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.1),
               inset 5px 5px 15px rgba(0, 0, 0, 0.5); /* Neumorphic shadow */
   outline: none; /* Remove default focus outline */
@@ -618,6 +618,7 @@ section {
   resize: none;
   height: 25rem;
   background: transparent; /* Transparent background */
+  border: 2px solid #fff; /* White border added */
   box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.1),
               inset 5px 5px 15px rgba(0, 0, 0, 0.5); /* Neumorphic shadow */
 }
