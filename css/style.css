@@ -605,7 +605,11 @@ section {
   color: #fff;
   text-transform: none;
   margin: .7rem 0;
-  background: rgb(160, 0, 0);
+  background: transparent; /* Transparent background */
+  border: none;
+  box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+              inset 5px 5px 15px rgba(0, 0, 0, 0.5); /* Neumorphic shadow */
+  outline: none; /* Remove default focus outline */
 }
 
 .contact .row form textarea {
@@ -613,16 +617,35 @@ section {
   border-radius: 1rem;
   resize: none;
   height: 25rem;
+  background: transparent; /* Transparent background */
+  box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+              inset 5px 5px 15px rgba(0, 0, 0, 0.5); /* Neumorphic shadow */
 }
 
 .contact .row form .btn {
   padding: 1rem 3rem;
   cursor: pointer;
+  border: none;
+  border-radius: 5rem;
+  background: rgb(160, 0, 0);
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+              5px 5px 15px rgba(0, 0, 0, 0.5); /* Neumorphic shadow */
+  color: #fff;
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
 }
 
 .contact .row form .btn:hover {
   background: #fff;
   color: #000000;
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.2),
+              5px 5px 15px rgba(0, 0, 0, 0.3); /* Slightly lighter shadow on hover */
+}
+
+.contact .row form .inputBox input:focus,
+.contact .row form textarea:focus {
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.2),
+              5px 5px 15px rgba(0, 0, 0, 0.3); /* Focus state shadow */
 }
 
 @media (max-width: 1200px) {
